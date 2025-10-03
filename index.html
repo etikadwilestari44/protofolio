@@ -4,54 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Etika Dwi Lestari - Portfolio</title>
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    :root {
+      --primary: #5a4a4c;
+      --secondary: #7a686a;
+      --accent: #a6939d;
+      --light: #d9cdd6;
+      --background: #f3e9f0;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
+      background-color: var(--background);
+      color: var(--primary);
     }
     .navbar {
-      background-color: #2c3e50;
+      background-color: var(--primary);
     }
     .navbar-brand, .nav-link {
       color: #fff !important;
     }
     header {
       padding: 100px 0;
-      background: linear-gradient(135deg, #2c3e50, #34495e);
-      color: #fff;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--light);
       text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
       font-weight: bold;
-    }
-    header p {
-      font-size: 1.2rem;
     }
     .card {
       border: none;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    }
-    footer {
-      background: #2c3e50;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
+      background-color: var(--light);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     .btn-primary {
-      background-color: #2c3e50;
+      background-color: var(--accent);
       border: none;
     }
     .btn-primary:hover {
-      background-color: #1a252f;
+      background-color: var(--secondary);
+    }
+    footer {
+      background: var(--primary);
+      color: var(--light);
+      padding: 1rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
@@ -86,8 +90,6 @@
       <p>
         I am a Fullstack Developer with experience in building interactive dashboards,
         database-driven applications, and deploying systems in the cloud.
-        My work combines data management with user-friendly web interfaces to support
-        organizational goals in conservation and development.
       </p>
     </div>
   </section>
@@ -117,7 +119,7 @@
       <div class="col-md-6 mb-3">
         <div class="card p-3">
           <h5>Collaboration</h5>
-          <p>GitHub, SharePoint, Project Management</p>
+          <p>GitHub, SharePoint</p>
         </div>
       </div>
     </div>
@@ -130,28 +132,22 @@
       <div class="col-md-4 mb-4">
         <div class="card h-100 p-3">
           <h5>🌱 ForestVerse Dashboard</h5>
-          <p>
-            Interactive dashboard for monitoring patrol, biodiversity, and training data.  
-            <br><strong>Tech:</strong> R Shiny, PostgreSQL, Docker, AWS  
-          </p>
+          <p>Interactive dashboard for patrol & biodiversity data.  
+          <br><strong>Tech:</strong> R Shiny, PostgreSQL, Docker, AWS</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card h-100 p-3">
           <h5>🐘 Data Management System</h5>
-          <p>
-            Integration of KoboToolbox & SMART data into centralized database.  
-            <br><strong>Tech:</strong> SQL, API, GitHub  
-          </p>
+          <p>Integration of KoboToolbox & SMART data.  
+          <br><strong>Tech:</strong> SQL, API, GitHub</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card h-100 p-3">
           <h5>☁️ Cloud Deployment</h5>
-          <p>
-            Migrated apps to AWS with Docker & DNS setup.  
-            <br><strong>Tech:</strong> Docker, AWS, DNS  
-          </p>
+          <p>Migrated apps to AWS with Docker & DNS setup.  
+          <br><strong>Tech:</strong> Docker, AWS, DNS</p>
         </div>
       </div>
     </div>
