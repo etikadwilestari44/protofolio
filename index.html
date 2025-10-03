@@ -4,134 +4,163 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Etika Dwi Lestari - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #2c3e50;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
     }
     header {
-      background: #2c3e50;
+      padding: 100px 0;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
       color: #fff;
-      padding: 2rem;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      font-weight: bold;
     }
-    nav {
-      background: #34495e;
-      padding: 0.5rem;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      color: #2c3e50;
-      margin-bottom: 0.5rem;
+    header p {
+      font-size: 1.2rem;
     }
     .card {
-      background: #fff;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     }
     footer {
-      text-align: center;
       background: #2c3e50;
       color: #fff;
       padding: 1rem;
-      margin-top: 2rem;
+      text-align: center;
+    }
+    .btn-primary {
+      background-color: #2c3e50;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #1a252f;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Etika Dwi Lestari</h1>
-    <p>Fullstack Developer | Database & System Developer</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Etika Dwi Lestari</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Hi, I'm Etika 👋</h1>
+      <p>Fullstack Developer | Database & System Developer</p>
+      <a href="#projects" class="btn btn-primary mt-3">See My Work</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="container py-5">
+    <h2 class="mb-4">About Me</h2>
+    <div class="card p-4">
       <p>
-        I am a Fullstack Developer with experience building data-driven web applications,
-        interactive dashboards, and database systems. I enjoy transforming complex data into
-        practical tools that support conservation and development projects. 
+        I am a Fullstack Developer with experience in building interactive dashboards,
+        database-driven applications, and deploying systems in the cloud.
+        My work combines data management with user-friendly web interfaces to support
+        organizational goals in conservation and development.
       </p>
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Backend:</strong> PHP, Laravel, ASP.NET Core (basic), SQL (PostgreSQL & MySQL)</li>
-        <li><strong>DevOps:</strong> Docker, AWS (EC2, RDS, DNS Management)</li>
-        <li><strong>Collaboration:</strong> GitHub, SharePoint</li>
-        <li><strong>Other Tools:</strong> R (Shiny apps), KoboToolbox, SMART</li>
-      </ul>
+  <!-- Skills -->
+  <section id="skills" class="container py-5">
+    <h2 class="mb-4">Skills</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="card p-3">
+          <h5>Frontend</h5>
+          <p>HTML5, CSS3, JavaScript</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="card p-3">
+          <h5>Backend</h5>
+          <p>PHP (Laravel), ASP.NET Core (basic), SQL (PostgreSQL & MySQL)</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="card p-3">
+          <h5>DevOps</h5>
+          <p>Docker, AWS (EC2, RDS, DNS Management)</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="card p-3">
+          <h5>Collaboration</h5>
+          <p>GitHub, SharePoint, Project Management</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-      <h3>🌱 ForestVerse Dashboard</h3>
-      <p>
-        An interactive dashboard for monitoring patrol, biodiversity, and farmer training data.  
-        <br><strong>Tech stack:</strong> R Shiny (UI/UX), PostgreSQL (DB), Docker, AWS EC2/RDS  
-        <br><strong>Role:</strong> Designed database schema, built web-based dashboards, deployed with Docker & AWS.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>🐘 Data Management System</h3>
-      <p>
-        Integrated KoboToolbox & SMART field data into a centralized relational database.  
-        <br><strong>Tech stack:</strong> SQL (ETL pipelines), API integration, GitHub collaboration.  
-        <br><strong>Role:</strong> Implemented database automation and reporting views for field teams.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>☁️ Cloud Deployment Project</h3>
-      <p>
-        Migrated internal applications to AWS for scalability and security.  
-        <br><strong>Tech stack:</strong> Docker, AWS EC2/RDS, DNS setup.  
-        <br><strong>Role:</strong> Managed cloud deployment & DNS configuration.
-      </p>
+  <!-- Projects -->
+  <section id="projects" class="container py-5">
+    <h2 class="mb-4">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-3">
+          <h5>🌱 ForestVerse Dashboard</h5>
+          <p>
+            Interactive dashboard for monitoring patrol, biodiversity, and training data.  
+            <br><strong>Tech:</strong> R Shiny, PostgreSQL, Docker, AWS  
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-3">
+          <h5>🐘 Data Management System</h5>
+          <p>
+            Integration of KoboToolbox & SMART data into centralized database.  
+            <br><strong>Tech:</strong> SQL, API, GitHub  
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-3">
+          <h5>☁️ Cloud Deployment</h5>
+          <p>
+            Migrated apps to AWS with Docker & DNS setup.  
+            <br><strong>Tech:</strong> Docker, AWS, DNS  
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
+  <!-- Contact -->
+  <section id="contact" class="container py-5">
+    <h2 class="mb-4">Contact</h2>
+    <div class="card p-4">
       <p>Email: <a href="mailto:etikadwilestari@example.com">etikadwilestari@example.com</a></p>
       <p>GitHub: <a href="https://github.com/etikadl" target="_blank">github.com/etikadl</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/etikadl" target="_blank">linkedin.com/in/etikadl</a></p>
@@ -141,5 +170,8 @@
   <footer>
     <p>© 2025 Etika Dwi Lestari | Portfolio Website</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
